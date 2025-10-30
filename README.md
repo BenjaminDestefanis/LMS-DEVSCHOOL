@@ -50,7 +50,11 @@ Incluye manejo de cursos, estudiantes, evaluaciones , y todo tipo de contenido.
 21. GET /api/users/:id/progress: Obtener progreso de un usuario en un curso.
 22. PUT /api/users/:id/progress: Actualizacion del progreso en un curso.
 
-
+### Caracteristicas claves
+#### Roles de Usuario
+1. Admin: Manejo de users, courses, assignments, and quizzes.
+2. Teacher: Puede crear y administrar cursos, actualizar ejercicios y evaluaciones.
+3. Student: Completar cursos, ejercicios, y evaluaciones.
 
 
 
