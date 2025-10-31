@@ -19,6 +19,23 @@ const User = sequelize.define('User', {
   password: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  rol: {
+    type: DataTypes.ENUM('student', 'instructor', 'admin'),
+    defaultValue: 'student',
+    allowNull: false
+  },
+  avatar: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  isActive: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
+  },
+  lastLogin: {
+    type: DataTypes.DATE,
+    allowNull: true
   }
 }, {
   tableName: 'users',

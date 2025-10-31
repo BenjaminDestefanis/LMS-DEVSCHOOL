@@ -13,7 +13,7 @@ const db = {
 // Sincronizar modelos con la base de datos
 db.syncDatabase = async () => {
   try {
-    await sequelize.sync({ force: false }); // force: true borra tablas existentes
+    await sequelize.sync({ force: false }); // force: true borra tablas existentes , en false , respeta las tablas creadas
     console.log('✅ Modelos sincronizados con la base de datos.');
   } catch (error) {
     console.error('❌ Error sincronizando modelos:', error);
