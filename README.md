@@ -56,6 +56,33 @@ Incluye manejo de cursos, estudiantes, evaluaciones , y todo tipo de contenido.
 2. Teacher: Puede crear y administrar cursos, actualizar ejercicios y evaluaciones.
 3. Student: Completar cursos, ejercicios, y evaluaciones.
 
+### Manejo de cursos
+1. Operaciones CRUD (CREATE / READ / UPDATE / DELETE)
+2. UPLOAD material de cursos (PDF / Video etc.)
+3. Evaluaciones y ejercicios para cada parte de cada curso.
+
+### Inscripciones de estudiantes
+1. El estudiante puede buscar cursos, y subscribirse a ellos.
+2. Cada estudiante puede seguir el progreso y grados de cada curso.
+
+### Autenticacion y Autorizacion
+1. JWT basado en autenticacion para logearse y registrarse.
+2. Roles para el control de acceso (RBCA) solo para usuarios autorizados (admin/teacher/student) con sus acciones especificas.
+
+### Presentacion de tareas/ejercicios
+1. Los estudiantes pueden subir sus tareas realizadas.
+2. Los Instructores pueden analizar los ejercicios y proveer feedback.
+
+### Tareas/Ejercicios
+1. Los ejercicios/cuestionarios de los cursos pueden tener calificacion automatica, o calificacion manual por pardel del instructor.
+
+### Seguimiento del progreso
+1. Poder tener un seguimiento del estudiante de acuerdo al curso que este haciendo.
+2. Mostrar el progreso en el panel.
+
+
+
+
 
 
 
