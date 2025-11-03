@@ -20,10 +20,15 @@
 
 backend/
 ├── config/
-│   └── database.js // Configuracion Base de datos
+│   └── database.js     -> Configuracion Base de datos
+│   └── config.json     -> Configuracion Migraciones Bases de Datos
+├── migrations/         -> Historial de migraciones y modificaciones BD
 ├── models/
-│   └── User.js // Modelos Base de datos
+│   └── user.js         -> Modelo Usuario
+│   └── user.js         -> Modelo Articulos
+│   └── course.js       -> Modelo Curso
+│   └── enrollment.js   -> Modelo Tarea
+│   └── index.js        -> Configuracion, sincronizacion y realaciones de modelos
 ├── routes/
-├── app.js
-├── server.js
+├── server.js           -> Servidor
 └── package.json
