@@ -3,9 +3,10 @@ const sequelize = require('../config/database');
 
 
 // Importar modelos
-const User = require('./user');
-const Course = require('./course');
-const Enrollment = require('./enrollment');
+const User        = require('./user');
+const Course      = require('./course');
+const Enrollment  = require('./enrollment');
+const Article     = require('./article');
 
 // 🔗 RELACIONES
 
@@ -35,6 +36,18 @@ Course.belongsToMany(User, {
   as: 'students'
 });
 
+// Un Usuario puede tener muchos articulos
+User.hasMany(Article, {
+  foreignKey: 'authoId',      // Crea Columna authorID en tabla articles
+  as: 'articles'              // Alias: user.getArticles() para obtener articulos
+})
+
+// Un articulo pertenece a un solo usuario
+Article.belongsTo(User, {
+  foreignKey: 'authorId',     // Misma columna
+  as: 'author'                // Alias: article.getAuthor()
+});
+
 
 // Objeto para exportar todos los modelos
 const db = {
@@ -42,7 +55,8 @@ const db = {
   Sequelize: require('sequelize'),
   User,
   Course,
-  Enrollment
+  Enrollment,
+  Article
   // Agregar más modelos aquí
 };
 
