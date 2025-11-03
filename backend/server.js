@@ -3,9 +3,12 @@ const db = require('./models');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const authRoutes = require('./routes/auth');
+
 
 // Middleware
-app.use(express.json());
+app.use(express.json()); // Manujo de archivos json
+app.use('/api/auth', authRoutes) //Manejo de auth
 
 // Sincronizar base de datos al iniciar
 db.syncDatabase();
@@ -34,6 +37,15 @@ app.get('/users', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+//Ruta protegida de ejemplo
+/* app.get('/api/protected', authenticate, (req, res) => {
+  res.json({
+    message: 'Esta es una ruta protegida',
+    user : req.user
+  })
+}) */
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
