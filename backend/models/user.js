@@ -1,6 +1,6 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
-
+const { DataTypes }   = require('sequelize');
+const sequelize       = require('../config/database');
+const bcrypt          = require('bcryptjs');
 
 const User = sequelize.define('User', {
   id: {
@@ -19,7 +19,14 @@ const User = sequelize.define('User', {
   },
   password: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+
+    // Configuracion bcrypt
+    set(value) {
+      // Hash automatico que guarda la contraseña
+      const hash = bcrypt.hashSync(value, 10);
+      this.setDataValue('password', hash);
+    }
   },
   role: {
     type: DataTypes.ENUM('student', 'instructor', 'admin'),
@@ -42,5 +49,11 @@ const User = sequelize.define('User', {
   tableName: 'users',
   timestamps: true // created_at y updated_at automáticos
 });
+
+// Metodo para comparar contraseña
+User.prototype.validPassword = function(password){
+  return bcrypt.compareSync(password, this.password);
+}
+// Metodo para comparar contraseña
 
 module.exports = User;
