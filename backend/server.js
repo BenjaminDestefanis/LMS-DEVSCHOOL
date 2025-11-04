@@ -10,6 +10,8 @@ const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const articleRoutes = require('./routes/articles');
 const courseRoutes = require('./routes/courses');
+const assignmentRoutes = require('./routes/assignments')
+const quizRoutes = require('./routes/quizzes')
 
 
 
@@ -22,6 +24,8 @@ app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/articles', articleRoutes)
 app.use('/api/courses', courseRoutes)
+app.use('/api', assignmentRoutes)
+app.use('/api', quizRoutes)
 
 
 // Sincronizar base de datos al iniciar
