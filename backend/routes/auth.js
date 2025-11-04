@@ -6,14 +6,38 @@ const db = require('../models');
 const router = express.Router();
 
 // REGISTRO DE USUARIO
+
+// POST - /api/auth/register - Registor de nuevos usuarios (admin, instructor, student)
 router.post('/register', async (req, res) => {
     try {
         const { name, email, password, role = 'student' } = req.body;
+
+        // Validar campos requeridos
+        if (!name || !email || !password) {
+        return res.status(400).json({ 
+            error: 'Nombre, email y contraseña son requeridos' 
+        });
+        }
+
+        // Validar rol permitido
+        const allowedRoles = ['student', 'instructor', 'admin'];
+        if (!allowedRoles.includes(role)) {
+        return res.status(400).json({ 
+            error: 'Rol no válido. Roles permitidos: student, instructor, admin' 
+        });
+        }
 
         // Verificar si el usuario ya existe
         const existingUser = await db.User.findOne({ where: { email } });
         if (existingUser) {
             return res.status(400).json({ error: 'El usuario ya existe' });
+        }
+
+        // Validar fortaleza de contraseña (opcional pero recomendado)
+        if (password.length < 6) {
+        return res.status(400).json({ 
+            error: 'La contraseña debe tener al menos 6 caracteres' 
+        });
         }
 
         // Crear usuario (la contraseña se hashea automáticamente)
@@ -28,19 +52,22 @@ router.post('/register', async (req, res) => {
         const token = generateToken(user);
 
         res.status(201).json({
-            message: 'Usuario registrado exitosamente',
+            message: `Usuario ${role} registrado exitosamente`,
             token,
             user: {
                 id: user.id,
                 name: user.name,
                 email: user.email,
-                role: user.role
+                role: user.role,
+                avatar: user.avatar,
+                isActive: user.isActive
             }
         });
 
         
     } catch (error) {
-        res.status(400).json({error: error.message})
+        console.error('Error en registro de usuario:', error)
+        res.status(400).json({error: 'Error al registrar usuario', details: error.message})
     }
 })
 
