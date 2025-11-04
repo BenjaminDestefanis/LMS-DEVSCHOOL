@@ -25,10 +25,17 @@ backend/
 ├── migrations/         -> Historial de migraciones y modificaciones BD
 ├── models/
 │   └── user.js         -> Modelo Usuario
-│   └── user.js         -> Modelo Articulos
+│   └── article.js      -> Modelo Articulo
 │   └── course.js       -> Modelo Curso
 │   └── enrollment.js   -> Modelo Tarea
 │   └── index.js        -> Configuracion, sincronizacion y realaciones de modelos
+├── middleware/
+│   └── auth.js         -> Verificador y decodificacion Token
 ├── routes/
+├── └── auth.js         -> Ruta Register/Login
+├── utils/
+├── └── jwt.js          -> JasonWebToken
 ├── server.js           -> Servidor
 └── package.json
+
+
