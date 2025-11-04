@@ -3,40 +3,43 @@ const db = require('./models');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+
+// Imprtacion rutas 
 const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/users');
+const articleRoutes = require('./routes/articles');
+const courseRoutes = require('./routes/courses');
+
 
 
 // Middleware
 app.use(express.json()); // Manujo de archivos json
 app.use('/api/auth', authRoutes) //Manejo de auth
 
+// Rutas
+app.use('/api/auth', authRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/articles', articleRoutes)
+app.use('/api/courses', courseRoutes)
+
+
 // Sincronizar base de datos al iniciar
 db.syncDatabase();
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-  res.json({ message: 'API funcionando con Sequelize + PostgreSQL' });
+   res.json({ 
+    message: '🚀 API LMS DevSchool funcionando',
+    endpoints: {
+      auth: '/api/auth',
+      users: '/api/users', 
+      articles: '/api/articles',
+      courses: '/api/courses (próximamente)'
+    }
+  });
 });
 
-// Ruta para crear usuario de ejemplo
-app.post('/users', async (req, res) => {
-  try {
-    const user = await db.User.create(req.body);
-    res.status(201).json(user);
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-});
-
-// Ruta para obtener usuarios
-app.get('/users', async (req, res) => {
-  try {
-    const users = await db.User.findAll();
-    res.json(users);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 //Ruta protegida de ejemplo
 /* app.get('/api/protected', authenticate, (req, res) => {
