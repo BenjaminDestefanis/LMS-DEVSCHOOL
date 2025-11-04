@@ -47,8 +47,8 @@ Incluye manejo de cursos, estudiantes, evaluaciones , y todo tipo de contenido.
 18. POST /api/courses/:id/quizzes: Agregar ejercicios a un curso.
 19. GET /api/courses/:id/quizzes: Obtener ejercicios.
 20. PROGRESS TRAKING:
-21. GET /api/users/:id/progress: Obtener progreso de un usuario en un curso.
-22. PUT /api/users/:id/progress: Actualizacion del progreso en un curso.
+21. GET /api/users/:id/progress: Obtener progreso de un usuario en un curso.    // PENDIENTE
+22. PUT /api/users/:id/progress: Actualizacion del progreso en un curso.        // PENDIENTE
 
 ### Caracteristicas claves
 #### Roles de Usuario
