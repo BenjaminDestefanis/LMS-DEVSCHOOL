@@ -5,8 +5,12 @@ const sequelize = require('../config/database');
 // Importar modelos
 const User        = require('./user');
 const Course      = require('./course');
-const Enrollment  = require('./enrollment');
+const Enrollment  = require('./enrollment'); // Inscripciones
 const Article     = require('./article');
+const Assignment  = require('./assignment'); // Asignaciones - gestion de asignaciones y tareas
+const Quiz        = require('./quiz'); // Ejercicios
+const Question    = require('./question') // Ejercicios Avanzados
+
 
 // 🔗 RELACIONES
 
@@ -48,6 +52,39 @@ Article.belongsTo(User, {
   as: 'author'                // Alias: article.getAuthor()
 });
 
+// Relaciones para Assignments
+Course.hasMany(Assignment, {
+  foreignKey: 'courseId',
+  as: 'assignments'
+});
+
+Assignment.belongsTo(Course, {
+  foreignKey: 'courseId',
+  as: 'course'
+});
+
+// Relaciones para Quizzes
+Course.hasMany(Quiz, {
+  foreignKey: 'courseId',
+  as: 'quizzes'
+});
+
+Quiz.belongsTo(Course, {
+  foreignKey: 'courseId',
+  as: 'course'
+});
+
+// Relaciones para Questions (si usas el modelo separado)
+Quiz.hasMany(Question, {
+  foreignKey: 'quizId',
+  as: 'QuizQuestions'
+});
+
+Question.belongsTo(Quiz, {
+  foreignKey: 'quizId',
+  as: 'quiz'
+});
+
 
 // Objeto para exportar todos los modelos
 const db = {
@@ -56,7 +93,11 @@ const db = {
   User,
   Course,
   Enrollment,
-  Article
+  Article,
+  Assignment,
+  Quiz,
+  Question
+
   // Agregar más modelos aquí
 };
 
