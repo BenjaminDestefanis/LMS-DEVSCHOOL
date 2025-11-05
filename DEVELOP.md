@@ -109,9 +109,11 @@ frontend/               (🎯 frontend React)
         │   ├── images/
         │   ├── icons/
         │   └── fonts/
-        ├── App.js          # Componente principal
+        ├── App.jsx          # Componente principal
         ├── App.css         # Estilos principales
-        ├── index.js        # Punto de entrada
+        ├── index.js        # 
+        ├── theme.js        # Estilos de componentes o elementos por defecto de MU
+        ├── main.js         # Punto de entrada, como index.jsx -- archivo raiz
         └── routes/         # Configuración de rutas
             ├── AppRouter.js
             ├── PublicRoutes.js
