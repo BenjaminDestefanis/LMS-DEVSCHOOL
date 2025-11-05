@@ -39,3 +39,80 @@ backend/
 └── package.json
 
 
+
+frontend/               (🎯 frontend React)
+    ├── public/
+    │   ├── index.html
+    │   └── favicon.ico
+    └── src/
+        ├── components/     # Componentes reutilizables
+        │   ├── ui/         # Componentes de UI básicos
+        │   │   ├── Button/
+        │   │   ├── Input/
+        │   │   ├── Card/
+        │   │   └── Modal/
+        │   ├── layout/     # Componentes de layout
+        │   │   ├── Header/
+        │   │   ├── Sidebar/
+        │   │   └── Footer/
+        │   └── shared/     # Componentes compartidos
+        │       ├── LoadingSpinner/
+        │       ├── ErrorMessage/
+        │       └── Pagination/
+        ├── pages/          # Páginas/views de la aplicación
+        │   ├── auth/       # Páginas de autenticación
+        │   │   ├── Login/
+        │   │   └── Register/
+        │   ├── dashboard/  # Dashboards por rol
+        │   │   ├── StudentDashboard/
+        │   │   ├── InstructorDashboard/
+        │   │   └── AdminDashboard/
+        │   ├── courses/    # Páginas de cursos
+        │   │   ├── CourseList/
+        │   │   ├── CourseDetail/
+        │   │   └── CreateCourse/
+        │   ├── articles/   # Páginas de artículos/blog
+        │   │   ├── ArticleList/
+        │   │   └── ArticleDetail/
+        │   └── profile/    # Páginas de perfil
+        │       └── UserProfile/
+        ├── contexts/       # Contexts de React
+        │   ├── AuthContext/
+        │   └── ThemeContext/
+        ├── hooks/          # Custom hooks
+        │   ├── useAuth/
+        │   ├── useApi/
+        │   └── useLocalStorage/
+        ├── services/       # Servicios y llamadas API
+        │   ├── api/
+        │   │   ├── auth.js
+        │   │   ├── courses.js
+        │   │   ├── articles.js
+        │   │   └── assignments.js
+        │   └── storage/
+        │       ├── token.js
+        │       └── user.js
+        ├── utils/          # Utilidades y helpers
+        │   ├── constants/
+        │   │   ├── roles.js
+        │   │   └── routes.js
+        │   ├── helpers/
+        │   │   ├── formatters.js
+        │   │   └── validators.js
+        │   └── config/
+        │       └── api.js
+        ├── styles/         # Estilos globales y temas
+        │   ├── globals.css
+        │   ├── variables.css
+        │   └── components/
+        ├── assets/         # Recursos estáticos
+        │   ├── images/
+        │   ├── icons/
+        │   └── fonts/
+        ├── App.js          # Componente principal
+        ├── App.css         # Estilos principales
+        ├── index.js        # Punto de entrada
+        └── routes/         # Configuración de rutas
+            ├── AppRouter.js
+            ├── PublicRoutes.js
+            └── ProtectedRoutes.js
