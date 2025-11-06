@@ -118,3 +118,8 @@ frontend/               (🎯 frontend React)
             ├── AppRouter.js
             ├── PublicRoutes.js
             └── ProtectedRoutes.js
+
+
+## PASO 3 - 
+### Recursos importantes
+https://prismic.io/blog/css-text-animations
