@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import NavBarButton from "../ui/buttons/NavBarButton";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
@@ -52,11 +53,12 @@ const Sidebar = () => {
         }}
       >
         <Toolbar />
-        <List>
-          {["Inicio", "Perfil", "Configuración", "Salir"].map((text) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
+        <List >
+          {["Inicio", "Cursos", "Clases", "Articulos"].map((text) => (
+             <ListItem button key={text}>
+              <NavBarButton children={text} />
+              {/* <ListItemText primary={text} /> */}
+            </ListItem> 
           ))}
         </List>
       </Drawer>
