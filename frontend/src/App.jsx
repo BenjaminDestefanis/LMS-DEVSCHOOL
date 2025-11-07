@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Sidebar from './components/layout/Sidebar.jsx'
+import LandingPage from './components/layout/LandingPage.jsx'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <Sidebar />
+    <LandingPage />
     </>
   )
 }
