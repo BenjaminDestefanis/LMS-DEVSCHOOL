@@ -10,7 +10,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Azul Material-UI por defecto
+      main: '#8d75e6', // Azul Material-UI por defecto
       light: '#42a5f5',
       dark: '#1565c0',
     },

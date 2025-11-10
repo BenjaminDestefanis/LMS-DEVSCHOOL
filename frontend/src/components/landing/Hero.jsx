@@ -26,7 +26,12 @@ const Hero = () => {
         <Button 
           variant="contained" 
           size="large"
-          sx={{ mt: 3 }}
+          sx={{ 
+            mt: 3,
+            backgroundColor: "#fff",
+            color: "#8d75e6",
+            fontWeight: "800"
+           }}
         >
           Comenzar Ahora
         </Button>
@@ -34,12 +39,20 @@ const Hero = () => {
         <Button
           variant="contained" 
           size="large"
-          sx={{ mt: 3 }}
+          sx={{ 
+            mt: 3,
+            //borderStyle: "solid",
+            //borderColor: "#fff",
+            backgroundColor: 'transparent',
+            color: '#fff', //8d75e6,
+            fontWeight: '800',
+            marginLeft: '10px'
+          }}
         >
           Suscribite
         </Button>
       </Container>
-      <LogoSlider />
+      {/*  <LogoSlider />  */} {/* Componente , deslizante de logo */}
     </HeroContainer>
   );
 };

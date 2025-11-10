@@ -10,9 +10,11 @@ import {
   AppBar,
   Typography
 } from "@mui/material";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NavBarButton from "../ui/buttons/NavBarButton";
+import SocialMedia from "./SocialMedia";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
@@ -61,6 +63,7 @@ const Sidebar = () => {
             </ListItem> 
           ))}
         </List>
+        <SocialMedia />
       </Drawer>
     </Box>
   );
