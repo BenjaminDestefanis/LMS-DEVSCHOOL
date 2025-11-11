@@ -20,9 +20,9 @@ function footerData() {
     <Stack direction={{ sm: 'row' }} sx={{ gap: 1.5, justifyContent: 'space-between', alignItems: { xs: 'flex-start', sm: 'center' } }}>
       <Stack sx={{ gap: 1 }}>
         <Stack direction="row" sx={{ alignItems: 'center', gap: 1 }}>
-          <Typography variant="h5">New landing demos are coming soon!</Typography>
+          <Typography variant="h5">Suscribete para obtener noticias sobre nuevas capacitaciones!</Typography>
           <Chip
-            label={<Typography variant="caption">Coming Soon</Typography>}
+            label={<Typography variant="caption">Proximamente</Typography>}
             size="small"
             sx={{
               bgcolor: 'background.default',
@@ -41,8 +41,7 @@ function footerData() {
           />
         </Stack>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          SaasAble offers 200+ customizable blocks, empowering you to effortlessly design and build landing pages tailored to your product
-          or service needs.
+          ADA, tu academia de programacion, ofrece las mejores capacitaciones, tutoriales, cursos, y carreras de dasarrollo, con el obejtivo, de ingresar rapidamente al mundo laboral.
         </Typography>
       </Stack>
       <Button
@@ -52,21 +51,21 @@ function footerData() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Buy Now
+        Registrarse
       </Button>
     </Stack>
   );
 }
 
 /***************************  NAVBAR - MEGAMENU LANDINGS  ***************************/
-
+// Seccion Cursos (NavBar)
 export const landingMegamenu = {
   id: 'landings',
   title: 'Landings',
   megaMenu: {
     type: MegaMenuType.MEGAMENU4,
     popperOffsetX: 195,
-    toggleBtn: { children: 'Landings' },
+    toggleBtn: { children: 'Cursos' },
     menuItems: [
       {
         title: 'JavaScript',
@@ -123,6 +122,7 @@ export const landingMegamenu = {
 
 /***************************  MEGAMENU 5 - BANNER  ***************************/
 
+// Banner Seccion navbar articulos
 function bannerData() {
   return (
     <Stack sx={{ alignItems: 'flex-start', gap: 3, height: 1, justifyContent: 'center' }}>
@@ -157,12 +157,13 @@ function bannerData() {
 
 /***************************  NAVBAR - MEGAMENU PAGES  ***************************/
 
+// Articulos / Blog seccion - 
 export const pagesMegamenu = {
   id: 'pages',
   title: 'Pages',
   megaMenu: {
     type: MegaMenuType.MEGAMENU5,
-    toggleBtn: { children: 'Pages' },
+    toggleBtn: { children: 'Articulos' },
     popperWidth: 860,
     menuItems: [
       {
