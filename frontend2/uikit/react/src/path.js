@@ -1,16 +1,17 @@
 function path(urlChunks) {
   return urlChunks.join('/');
+  // une array de fragmentos url. EJ: path(["section", "auth", "login"]) = "section/auth/login"
 }
 
-export const SECTION_PATH = '/sections';
-export const ADMIN_PATH = 'https://free.admin.saasable.io/';
+export const SECTION_PATH = '/sections';    // Ruta para secciones web
+export const ADMIN_PATH = 'https://free.admin.saasable.io/';  
 export const BUY_NOW_URL = 'https://mui.com/store/items/saasable-multipurpose-ui-kit-and-dashboard-template';
 export const FREEBIES_URL = 'https://github.com/phoenixcoded/saasable-ui';
 export const DOCS_URL = 'https://phoenixcoded.gitbook.io/saasable ';
 const BLOCK_PATH = '/blocks';
 const AUTH_PATH = 'auth';
 
-export const PAGE_PATH = {
+export const PAGE_PATH = {  // Rutas principales del sitio
   // auth pages path
   login: path([SECTION_PATH, AUTH_PATH, 'login']),
   forgotPassword: path([SECTION_PATH, AUTH_PATH, 'forgot-password']),

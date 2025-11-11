@@ -16,7 +16,7 @@ export const navbar = {
   },
   primaryBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
   navItems: [
-    { id: 'home', title: 'Home', link: '/' },
+    { id: 'home', title: 'Inicio', link: '/' }, 
     landingMegamenu,
     { id: 'components', title: 'Blocks', link: SECTION_PATH },
     { id: 'dashboard', title: 'Dashboard', link: ADMIN_PATH, ...linkProps },

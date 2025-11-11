@@ -69,13 +69,13 @@ export const landingMegamenu = {
     toggleBtn: { children: 'Landings' },
     menuItems: [
       {
-        title: 'CRM',
+        title: 'JavaScript',
         theme: Themes.THEME_CRM,
         image: '/assets/images/mega-menu/crm-light.svg',
-        status: 'Pro'
+        status: 'free'
       },
       {
-        title: 'AI',
+        title: 'Frontend',
         theme: Themes.THEME_AI,
         image: '/assets/images/mega-menu/ai-light.svg',
         status: 'Pro'
@@ -93,19 +93,25 @@ export const landingMegamenu = {
         status: 'Pro'
       },
       {
-        title: 'PMS',
+        title: 'Ingles Basico',
         theme: Themes.THEME_PMS,
         image: '/assets/images/mega-menu/pms-light.svg',
-        status: 'Pro'
+        status: 'free'
       },
       {
-        title: 'HRM',
+        title: 'Ingles Avanzado',
         theme: Themes.THEME_HRM,
         image: '/assets/images/mega-menu/hrm-light.svg',
         status: 'Pro'
       },
       {
-        title: 'Plugin',
+        title: 'Backend',
+        theme: Themes.THEME_PLUGIN,
+        image: '/assets/images/mega-menu/plugin-light.svg',
+        status: 'Pro'
+      },
+      { // Objeto pára probar
+        title: 'PHP',
         theme: Themes.THEME_PLUGIN,
         image: '/assets/images/mega-menu/plugin-light.svg',
         status: 'Pro'

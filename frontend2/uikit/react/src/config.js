@@ -1,5 +1,5 @@
 // @next
-import { Archivo, Figtree, Roboto } from 'next/font/google';
+import { Archivo, Figtree, Roboto } from 'next/font/google'; // importacioin de fuentes
 
 export let Themes;
 
@@ -18,7 +18,7 @@ export let Themes;
 /***************************  CONFIG  ***************************/
 
 const config = {
-  currentTheme: Themes.THEME_DEFAULT
+  currentTheme: Themes.THEME_DEFAULT // Configuracion gloval de la app
 };
 
 export default config;
