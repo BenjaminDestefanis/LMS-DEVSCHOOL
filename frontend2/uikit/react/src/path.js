@@ -5,7 +5,9 @@ function path(urlChunks) {
 
 export const SECTION_PATH = '/sections';    // Ruta para secciones web
 export const ADMIN_PATH = 'https://free.admin.saasable.io/';  
-export const BUY_NOW_URL = 'https://mui.com/store/items/saasable-multipurpose-ui-kit-and-dashboard-template';
+export const BUY_NOW_URL = 'https://google.com';
+export const USER_REGISTER = ''
+// BUY-NOW-URL : Antes https://mui.com/store/items/saasable-multipurpose-ui-kit-and-dashboard-template
 export const FREEBIES_URL = 'https://github.com/phoenixcoded/saasable-ui';
 export const DOCS_URL = 'https://phoenixcoded.gitbook.io/saasable ';
 const BLOCK_PATH = '/blocks';
