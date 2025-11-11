@@ -31,8 +31,8 @@ export const hero = {
       </>
     )
   },
-  headLine: 'Multipurpose UI Kit and Dashboard Template',
-  captionLine: 'Design marketing pages and powerful admin dashboards with ease using our UI Kit, built following Material 3 guidelines.',
+  headLine: 'La academia de tegnologia e idiomas que buscabas',
+  captionLine: 'Clases personalizadas que se adaptan a ti, y la preparacion mas completa para tu posicion, acompañada de las rutas de aprendizajes mas actualizadas.',
   primaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },
   videoSrc: 'https://d2elhhoq00m1pj.cloudfront.net/saasable-intro.mp4',
   videoThumbnail: '/assets/videos/thumbnails/intro-thumbnail.png',
