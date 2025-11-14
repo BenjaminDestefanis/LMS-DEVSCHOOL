@@ -5,6 +5,7 @@ import { SECTION_PATH, BUY_NOW_URL, ADMIN_PATH, DOCS_URL } from '@/path';
 
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 
+// features = caracteristicas -
 export const feature2 = {
   heading: 'Culture of Innovation',
   caption:
@@ -71,11 +72,12 @@ export const feature5 = {
   actionBtn: { children: 'Explore all Features', href: '#' }
 };
 
+// Seccion - "Cursos destacadas"
 export const feature20 = {
-  heading: 'Comprehensive UI Kit Tailored to your Need',
-  caption: 'Ready to transform your SaaS designs with one powerful UI Kit?',
-  actionBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
-  secondaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },
+  heading: 'Cursos mas destacados por nuestra comunidad',
+  caption: '¿Listo para comenzar a construir o reforzar tu futuro?',
+  actionBtn: { children: 'Contacto', href: BUY_NOW_URL, ...linkProps },
+  secondaryBtn: { children: 'Explorar + cursos', href: SECTION_PATH },
   features: [
     {
       icon: 'tabler-accessible',
