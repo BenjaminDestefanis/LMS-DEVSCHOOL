@@ -74,25 +74,25 @@ export const feature5 = {
 
 // Seccion - "Cursos destacadas"
 export const feature20 = {
-  heading: 'Cursos mas destacados por nuestra comunidad',
-  caption: '¿Listo para comenzar a construir o reforzar tu futuro?',
+  heading: 'Te contamos nuestros metodos de enseñanza.',
+  caption: 'Estos son algunas de las tecnicas que aprenderas en nuestros cursos.',
   actionBtn: { children: 'Contacto', href: BUY_NOW_URL, ...linkProps },
   secondaryBtn: { children: 'Explorar + cursos', href: SECTION_PATH },
   features: [
     {
       icon: 'tabler-accessible',
-      title: 'WCAG Compliant',
-      content: 'Ensure accessibility with WCAG compliant design for browsing.'
+      title: 'Resolucion de Problemas',
+      content: 'Aprendizaje basado en la resolucion de problemas reales y complejos, activando el pensamiento critico, mejorando la retencion y simulando el mundo real.'
     },
     {
       icon: 'tabler-brand-google',
-      title: 'SEO Friendly',
-      content: 'Boost visibility with SEO-friendly features for better search rankings.'
+      title: 'Metodo Socratico',
+      content: 'El uso de preguntas que impulsan y obligan a pensar incrementando el razonamiento logico y reduce la capacidad cognitiva.'
     },
     {
       icon: 'tabler-stack-2',
-      title: 'MUI Components',
-      content: 'Customize Material 3 design MUI components for enhanced aesthetics.'
+      title: 'Microlearning',
+      content: 'Enseñanzas en fragmentos cortos (3 a 7 min) con el objetivo de optimizar la memoria de trabajo y reducir la sobrecarga cognitiva.'
     },
     {
       icon: 'tabler-rocket',
