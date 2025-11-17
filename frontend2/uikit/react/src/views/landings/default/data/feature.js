@@ -74,7 +74,7 @@ export const feature5 = {
 
 // Seccion - "Cursos destacadas"
 export const feature20 = {
-  heading: 'Te contamos nuestros metodos de enseñanza.',
+  heading: 'Te contamos algunos de nuestros metodos de enseñanza.',
   caption: 'Estos son algunas de las tecnicas que aprenderas en nuestros cursos.',
   actionBtn: { children: 'Contacto', href: BUY_NOW_URL, ...linkProps },
   secondaryBtn: { children: 'Explorar + cursos', href: SECTION_PATH },
@@ -96,18 +96,18 @@ export const feature20 = {
     },
     {
       icon: 'tabler-rocket',
-      title: 'Aprendizaje basado en proyectos',
-      content: 'Creacion de proyectos finales aplicando todos los conocimentos aprendidos, aumentando la motivazion y la comprension pro'
+      title: 'High Performance UI',
+      content: 'Adjust content layout for visual coherence on various screen sizes.'
     },
     {
       icon: 'tabler-help',
-      title: 'Detailed Documentation',
-      content: 'Access comprehensive documentation for easy guidance on platform usage.'
+      title: 'Tecnica Feynman',
+      content: 'Procesar la informacion las veces necesarias, hasta poder explicar la misma de la maneras mas sencilla posible.'
     },
     {
       icon: 'tabler-refresh',
-      title: 'Regular Updates',
-      content: 'Receive consistent updates to keep the platform secure and up-to-date with the latest features.'
+      title: 'Mapas mentales y conceptuales',
+      content: 'Desarrollar y mejorar la organizacion cognitiva y la comprension global.'
     }
   ]
 };
@@ -264,8 +264,8 @@ export const feature23 = {
 };
 
 export const feature18 = {
-  heading: 'Powerful Admin Interface',
-  caption: 'Manage data, users, and workflows effortlessly with intuitive, customizable admin controls and features.',
+  heading: 'Potente interfaz de administracion.',
+  caption: 'Analiza tus progresos, tus recomendaciones, novedades, procesos de trabajo, listas de proyectos colaborativos, notificaciones y mas.',
   topics: [
     {
       icon: 'tabler-sparkles',

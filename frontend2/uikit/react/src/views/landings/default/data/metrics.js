@@ -1,10 +1,10 @@
 export const metrics = {
-  heading: 'Endless Possibilities',
+  heading: 'Nuestros datos hablan por si solos',
   caption: 'Everything you need to design both the marketing site and the admin interface for your SaaS product.',
   blockDetail: [
-    { animationDelay: 0.1, counter: 200, defaultUnit: '+', caption: 'Blocks' },
-    { animationDelay: 0.2, counter: 50, defaultUnit: '+', caption: 'Admin Pages' },
-    { animationDelay: 0.3, counter: 7, defaultUnit: '+', caption: 'Landing Demos' },
-    { animationDelay: 0.4, counter: 1200, defaultUnit: '+', caption: 'Hours Saved' }
+    { animationDelay: 0.1, counter: 100, defaultUnit: '+', caption: 'Alumnos' },
+    { animationDelay: 0.2, counter: 20, defaultUnit: '+', caption: 'Cursos' },
+    { animationDelay: 0.3, counter: 3, defaultUnit: '+', caption: 'Proyectos estudiantiles' },
+    { animationDelay: 0.4, counter: 500, defaultUnit: '+', caption: 'Horas de aprendizaje' }
   ]
 };

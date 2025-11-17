@@ -57,6 +57,52 @@ function footerData() {
   );
 }
 
+
+/***************************  MEGAMENU 4 - FOOTER  ***************************/
+
+// Seccion Cursos en vivo
+function footerDataLiveCourses() {
+  return (
+    <Stack direction={{ sm: 'row' }} sx={{ gap: 1.5, justifyContent: 'space-between', alignItems: { xs: 'flex-start', sm: 'center' } }}>
+      <Stack sx={{ gap: 1 }}>
+        <Stack direction="row" sx={{ alignItems: 'center', gap: 1 }}>
+          <Typography variant="h5">Proximas carreras y cursos de desarrollo en vivo, guiados completamente por instructores capacitados!</Typography>
+          <Chip
+            label={<Typography variant="caption">Proximamente</Typography>}
+            size="small"
+            sx={{
+              bgcolor: 'background.default',
+              '& .MuiChip-label': { px: 1.5, py: 0.5 },
+              display: { xs: 'none', sm: 'inline-flex' }
+            }}
+            icon={
+              <CardMedia
+                component="img"
+                image="/assets/images/shared/celebration.svg"
+                sx={{ width: 16, height: 16 }}
+                alt="celebration"
+                loading="lazy"
+              />
+            }
+          />
+        </Stack>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          ADA, tu academia de programacion, ofrece las mejores capacitaciones, tutoriales, cursos, y carreras de dasarrollo, con el obejtivo, de ingresar rapidamente al mundo laboral.
+        </Typography>
+      </Stack>
+      <Button
+        variant="contained"
+        sx={{ display: { xs: 'none', sm: 'inline-flex' }, minWidth: 100, px: { xs: 2 }, py: 1.25 }}
+        href={BUY_NOW_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Registrarse
+      </Button>
+    </Stack>
+  );
+}
+
 /***************************  NAVBAR - MEGAMENU LANDINGS  ***************************/
 // Seccion Cursos (NavBar)
 export const landingMegamenu = {
@@ -120,6 +166,70 @@ export const landingMegamenu = {
   }
 };
 
+
+/***************************  NAVBAR - MEGAMENU LANDINGS  ***************************/
+// Seccion Cursos (NavBar)
+export const landingMegamenuTwo = {
+  id: 'landings',
+  title: 'Landings',
+  megaMenu: {
+    type: MegaMenuType.MEGAMENU4,
+    popperOffsetX: 195,
+    toggleBtn: { children: 'Cursos en Vivo' },
+    menuItems: [
+      {
+        title: 'React',
+        theme: Themes.THEME_CRM,
+        image: '/assets/images/mega-menu/crm-light.svg',
+        status: 'free'
+      },
+      {
+        title: 'Backend',
+        theme: Themes.THEME_AI,
+        image: '/assets/images/mega-menu/ai-light.svg',
+        status: 'Pro'
+      },
+      {
+        title: 'Python + IA',
+        theme: Themes.THEME_CRYPTO,
+        image: '/assets/images/mega-menu/crypto-light.svg',
+        status: 'Pro'
+      },
+      {
+        title: 'PostgreSQL',
+        theme: Themes.THEME_HOSTING,
+        image: '/assets/images/mega-menu/hosting-light.svg',
+        status: 'Pro'
+      },
+      {
+        title: 'Full Stack',
+        theme: Themes.THEME_PMS,
+        image: '/assets/images/mega-menu/pms-light.svg',
+        status: 'free'
+      },
+      {
+        title: 'Front End',
+        theme: Themes.THEME_HRM,
+        image: '/assets/images/mega-menu/hrm-light.svg',
+        status: 'Pro'
+      },
+      {
+        title: 'Next.Js',
+        theme: Themes.THEME_PLUGIN,
+        image: '/assets/images/mega-menu/plugin-light.svg',
+        status: 'Pro'
+      },
+      { // Objeto pára probar
+        title: 'Django',
+        theme: Themes.THEME_PLUGIN,
+        image: '/assets/images/mega-menu/plugin-light.svg',
+        status: 'Pro'
+      }
+    ],
+    footerData: footerDataLiveCourses()
+  }
+};
+
 /***************************  MEGAMENU 5 - BANNER  ***************************/
 
 // Banner Seccion navbar articulos
@@ -142,14 +252,14 @@ function bannerData() {
             size="small"
             sx={{ bgcolor: 'background.default', '& .MuiChip-label': { px: 1.5, py: 0.5 }, '& .MuiChip-icon': { ml: 1.25 } }}
           />
-          <Typography variant="h5">Exciting Dashboard on the Way!</Typography>
+          <Typography variant="h5">Suscribete para recibir notificacion sobre nuevos articulos.</Typography>
         </Stack>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           Effortlessly manage your app’s backend with customizable admin dashboards that enhance productivity.
         </Typography>
       </Stack>
       <Button href={ADMIN_PATH} variant="contained" sx={{ minWidth: 92, px: { xs: 2 }, py: 1.25 }}>
-        View Dashboard
+        Ultimos articulos
       </Button>
     </Stack>
   );
@@ -167,27 +277,27 @@ export const pagesMegamenu = {
     popperWidth: 860,
     menuItems: [
       {
-        title: 'General',
+        title: 'Full Stack',
         itemsList: [
-          { title: 'About', link: { href: 'https://stage.saasable.io/about', ...linkProps } },
-          { title: 'Career', status: 'Pro' },
-          { title: 'Privacy Policy', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
-          { title: 'Contact Us', status: 'Pro' },
-          { title: 'FAQs', status: 'Pro' },
-          { title: 'Pricing', status: 'Pro' }
+          { title: 'Frontend', link: { href: 'https://stage.saasable.io/about', ...linkProps } },
+          { title: 'Backend', status: 'Pro' },
+          { title: 'Proyectos', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
+          { title: 'Algoritmos', status: 'Pro' },
+          { title: 'Lenguajes', status: 'Pro' },
+          { title: 'Practicas', status: 'Pro' }
         ]
       },
       {
-        title: 'Maintenance',
+        title: 'IA',
         itemsList: [
-          { title: 'Coming Soon', status: 'Pro' },
-          { title: 'Error 404', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
-          { title: 'Error 500', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
-          { title: 'Under Maintenance', status: 'Pro' }
+          { title: 'M. Learning', status: 'Pro' },
+          { title: 'D. Learning', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
+          { title: 'Chatbots', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
+          { title: 'Modelos', status: 'Pro' }
         ]
       },
       {
-        title: 'External',
+        title: 'Idiomas',
         itemsList: [
           { title: 'Blog', link: { href: 'https://blog.saasable.io/', ...linkProps } },
           { title: 'Documentation', link: { href: DOCS_URL, ...linkProps } },
