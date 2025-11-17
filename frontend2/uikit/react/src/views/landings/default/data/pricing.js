@@ -4,8 +4,8 @@ import { BUY_NOW_URL, FREEBIES_URL } from '@/path';
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 
 export const pricing = {
-  heading: 'The Affordable Unfair Advantage',
-  caption: 'Choose the plan that aligns with your SaaS product requirements.',
+  heading: 'Planes y Suscripciones',
+  caption: 'Elige el plan que mas se adapte a lo que necesitas.',
   features: [
     { id: 1, label: '1 Demo Landing' },
     { id: 2, label: '7 Demo Landing' },
@@ -38,6 +38,16 @@ export const pricing = {
       contentLink: { children: 'license', href: 'https://mui.com/store/license/', ...linkProps },
       exploreLink: { children: 'Get Started With Pro', href: BUY_NOW_URL, ...linkProps },
       featuresID: [2, 4, 5, 6, 7, 8, 9, 10]
-    }
+    },
+    {
+      title: 'Free',
+      price: 0,
+      active: false,
+      featureTitle: 'Features',
+      content: 'Learn more about the MIT',
+      contentLink: { children: 'license', href: 'https://mui.com/store/license/', ...linkProps },
+      exploreLink: { children: 'Get Started With Free', href: FREEBIES_URL, ...linkProps },
+      featuresID: [1, 3]
+    },
   ]
 };

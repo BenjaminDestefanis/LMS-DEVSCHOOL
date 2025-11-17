@@ -5,35 +5,37 @@ import { PAGE_PATH, SECTION_PATH } from '@/path';
 const imagePrefix = '/assets/images/presentation';
 
 // @project
-import branding from '@/branding.json';
+//import branding from '@/branding.json'; importacion de cabezera original
 
 export const other = {
-  heading: `${branding.brandName} blocks `,
-  description: 'Explore a wide range of ready-made blocks—from Hero to CTA, Features, and more to speed up your design process.',
-  primaryBtn: { children: 'Explore all Blocks', href: SECTION_PATH },
+  //heading: `${branding.brandName} blocks `,  Cabezera original
+  heading: `Clases Personalizadas`,
+  description: 'Ten en cuenta que las clases a diferencia de los cursos y carreras, son ideales para adaptarse aun mas a una necesidad especifica.',
+  primaryBtn: { children: 'Reservar Clase', href: SECTION_PATH },
   sections: [
     {
       animationDelay: 0.2,
-      title: 'Hero',
-      subTitle: '19 Different Variants',
+      title: 'Clase Individual ',
+      subTitle: 'Este modelo express, solo para una persona, para poder abarcar con urgencia , esos temas que mas necesites comprender.',
       image: `${imagePrefix}/hero-light.svg`,
       link: PAGE_PATH.hero
     },
     {
       animationDelay: 0.3,
-      title: 'Call to Action',
-      subTitle: '14 Different Variants',
+      title: 'Clase Grupal',
+      subTitle: 'Para 2 o mas personas, ideal para abordar temas en comun, pero de forma grupal. A mas personas, mayor descuento por hora.',
       image: `${imagePrefix}/cta-light.svg`,
       link: PAGE_PATH.cta
     },
     {
       animationDelay: 0.4,
-      title: 'Features',
-      subTitle: '27 Different Variants',
+      title: 'Clases Pack',
+      subTitle: 'Puedes reservar Packs de 2hs, 5hs, y hasta 10hs, para poder apreder temas o desarrolar projectos que requieran mas tiempo.',
       image: `${imagePrefix}/feature-light.svg`,
       link: PAGE_PATH.feature
     },
-    {
+
+    /* {
       animationDelay: 0.2,
       title: 'Metrics',
       subTitle: '10 Different Variants',
@@ -53,7 +55,7 @@ export const other = {
       subTitle: '9 Different Variants',
       image: `${imagePrefix}/integration-light.svg`,
       link: PAGE_PATH.integration
-    }
+    } */
   ]
 };
 
