@@ -96,8 +96,8 @@ export const feature20 = {
     },
     {
       icon: 'tabler-rocket',
-      title: 'High Performance UI',
-      content: 'Adjust content layout for visual coherence on various screen sizes.'
+      title: 'Aprendizaje basado en proyectos',
+      content: 'Creacion de proyectos finales aplicando todos los conocimentos aprendidos, aumentando la motivazion y la comprension pro'
     },
     {
       icon: 'tabler-help',
