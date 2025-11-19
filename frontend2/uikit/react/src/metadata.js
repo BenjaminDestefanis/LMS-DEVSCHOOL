@@ -1,3 +1,28 @@
+
+/* 
+Centraliza toda la información SEO del proyecto
+
+Títulos de cada página
+Descripciones
+Datos OpenGraph (para compartir en redes)
+Paths de cada sección
+Información dinámica basada en branding.json (nombre de la marca, empresa, etc.)
+Se usa para que Next.js genere correctamente:
+
+<head>
+
+Metadata SEO
+
+Metadata para redes sociales (Facebook, Twitter, LinkedIn)
+
+Canonical URLs
+
+OpenGraph
+
+Metadata por página
+
+*/
+
 // @project
 import branding from '@/branding.json';
 import { PAGE_PATH, SECTION_PATH } from '@/path';

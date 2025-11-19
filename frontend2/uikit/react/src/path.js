@@ -3,7 +3,7 @@ function path(urlChunks) {
   // une array de fragmentos url. EJ: path(["section", "auth", "login"]) = "section/auth/login"
 }
 
-export const SECTION_PATH = '/sections';    // Ruta para secciones web
+export const SECTION_PATH = '/sections';    // Ruta para secciones web -- para todas las secciones del sitio
 export const ADMIN_PATH = 'https://free.admin.saasable.io/';  
 export const BUY_NOW_URL = 'https://google.com';
 export const USER_REGISTER = ''
@@ -67,7 +67,7 @@ export const PAGE_PATH = {  // Rutas principales del sitio
   termsConditionPage: '/terms-condition'
 };
 
-export const PRIVIEW_PATH = {
+export const PRIVIEW_PATH = { 
   about: {
     about1: path([BLOCK_PATH, 'about', 'about1']),
     about2: path([BLOCK_PATH, 'about', 'about2']),

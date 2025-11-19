@@ -1,8 +1,8 @@
 {
-  "brandName": "SaasAble",
-  "title": "React Multipurpose UI Kit and Dashboard Template",
+  "brandName": "Ada Devs School",
+  "title": "Academia de programacion e idiomas",
   "company": {
-    "name": "Phoenixcoded",
+    "name": "Ada Devs School",
     "url": "https://phoenixcoded.net",
     "socialLink": {
       "linkedin": "https://in.linkedin.com/company/phoenixcoded",
@@ -22,3 +22,5 @@
     "logoWatermark": ""
   }
 }
+
+
