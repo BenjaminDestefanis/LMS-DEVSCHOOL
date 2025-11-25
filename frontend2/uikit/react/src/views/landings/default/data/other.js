@@ -125,3 +125,33 @@ export const other3 = {
     }
   ]
 };
+
+export const other4 = {
+  heading: `Desarrollo de Proyectos`,
+  description: `Te presentamos tambien nuestras guias y ayudas en eldesarrollado y asistencia en el progreso de tu proyecto institucional o universitario`,
+  primaryBtn: { children: 'Solicitar Info', href: SECTION_PATH},
+  sections: [
+    {
+      animationDelay: 0.2,
+      title: 'Proyectos Nivel Escolar',
+      subTitle: 'Guia completa y motivadora para el desarrollo de tus proyectos, acompañados de la planificacion, creatividad y ejecucion necesarias para completar tu proyecto.',
+      image: `${imagePrefix}/hero-light.svg`,
+      link: PAGE_PATH.hero
+    },
+    {
+      animationDelay: 0.2,
+      title: 'Proyectos Nivel Terciario (Tecnicas y Superiores',
+      subTitle: 'Usando las mejores estrategias para conectar la teoria con la practica y asi completar tu proyecto.',
+      image: `${imagePrefix}/hero-light.svg`,
+      link: PAGE_PATH.hero
+    },
+    {
+      animationDelay: 0.2,
+      title: 'Proyectos Nivel Universitario',
+      subTitle: 'Cuenta con la colaboracion especializada que exige un mayor rigor intelectual y metodológico, como: diseño metodologico, analisis de datos y redaccion academica.',
+      image: `${imagePrefix}/hero-light.svg`,
+      link: PAGE_PATH.hero
+    }
+  ]
+} 
+ 

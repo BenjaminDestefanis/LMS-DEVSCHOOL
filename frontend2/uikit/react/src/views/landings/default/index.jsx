@@ -19,9 +19,12 @@ import {
   hero,
   integration,
   other,
+  other4,
   pricing,
   testimonial
 } from './data';
+
+
 
 /***************************  PAGE - MAIN  ***************************/
 
@@ -37,9 +40,13 @@ export default function Main() {
         sections={[
           { importFunc: () => import('@/blocks/metrics').then((module) => ({ default: module.Metrics5 })), props: metrics },
           { importFunc: () => import('@/blocks/integration').then((module) => ({ default: module.Integration2 })), props: integration },
-          { importFunc: () => import('@/blocks/other').then((module) => ({ default: module.Other1 })), props: other }
+          { importFunc: () => import('@/blocks/other').then((module) => ({ default: module.Other1 })), props: other },
+
+          //  Seccion de proyectos
+          { importFunc: () => import('@/blocks/other').then((module) => ({ default: module.Other1})), props:other4},
         ]}
         offset="200px"
+
       />
 
       <LazySection

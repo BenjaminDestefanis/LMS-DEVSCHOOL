@@ -7,7 +7,7 @@ export { hero } from './hero';
 export { integration } from './integration';
 export { metrics } from './metrics';
 export { navbar } from './navbar';
-export { other, other3 } from './other';
+export { other, other3, other4 } from './other';
 export { pricing } from './pricing';
 export { smallHero, smallHero1, smallHero4 } from './small-hero';
 export { team } from './team';
