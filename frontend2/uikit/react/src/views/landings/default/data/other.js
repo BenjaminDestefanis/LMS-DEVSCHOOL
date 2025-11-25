@@ -2,6 +2,7 @@
 import { PAGE_PATH, SECTION_PATH } from '@/path';
 
 // @assets
+const imageClass = '/assets/images/other-clases';
 const imagePrefix = '/assets/images/presentation';
 
 // @project
@@ -17,21 +18,21 @@ export const other = {
       animationDelay: 0.2,
       title: 'Clase Individual ',
       subTitle: 'Este modelo express, solo para una persona, para poder abarcar con urgencia , esos temas que mas necesites comprender.',
-      image: `${imagePrefix}/hero-light.svg`,
+      image: `${imageClass}/1.png`,
       link: PAGE_PATH.hero
     },
     {
       animationDelay: 0.3,
       title: 'Clase Grupal',
       subTitle: 'Para 2 o mas personas, ideal para abordar temas en comun, pero de forma grupal. A mas personas, mayor descuento por hora.',
-      image: `${imagePrefix}/cta-light.svg`,
+      image: `${imageClass}/3.png`,
       link: PAGE_PATH.cta
     },
     {
       animationDelay: 0.4,
       title: 'Clases Pack',
       subTitle: 'Puedes reservar Packs de 2hs, 5hs, y hasta 10hs, para poder apreder temas o desarrolar projectos que requieran mas tiempo.',
-      image: `${imagePrefix}/feature-light.svg`,
+      image: `${imageClass}/8.png`,
       link: PAGE_PATH.feature
     },
 
