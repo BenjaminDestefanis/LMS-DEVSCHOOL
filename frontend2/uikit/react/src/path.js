@@ -263,7 +263,8 @@ export const PRIVIEW_PATH = {
   other: {
     other1: path([BLOCK_PATH, 'other', 'other1']),
     other2: path([BLOCK_PATH, 'other', 'other2']),
-    other3: path([BLOCK_PATH, 'other', 'other3'])
+    other3: path([BLOCK_PATH, 'other', 'other3']),
+    other4: path([BLOCK_PATH, 'other', 'other4']), 
   },
   pricing: {
     pricing1: path([BLOCK_PATH, 'pricing', 'pricing1']),

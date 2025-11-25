@@ -266,7 +266,8 @@ export const FIGMA_LINK = {
     variant: {
       other1: BUY_NOW_URL,
       other2: BUY_NOW_URL,
-      other3: BUY_NOW_URL
+      other3: BUY_NOW_URL,
+      //other4: BUY_NOW_URL,
     }
   },
   pricing: {
