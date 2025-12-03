@@ -23,6 +23,8 @@ import {
   pricing,
   testimonial
 } from './data';
+import WhatsappButton from '@/components/buttons/WhastappButton';
+import { Component } from 'react';
 
 
 
@@ -74,6 +76,8 @@ export default function Main() {
         ]}
         offset="200px"
       />
+
+      <WhatsappButton />
     </>
   );
 }
